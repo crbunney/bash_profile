@@ -83,5 +83,5 @@ E.g. `$ bash third_party_script.sh`
 
 ## Install extra packages
  
- 1. `brew install git bash-completion@2`
+1. **bash_completion**: `brew install git bash-completion@2`
    * The bundled version of git is current, but doesn't include the git-prompt script that enables embedded git status info in the command prompt

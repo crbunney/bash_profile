@@ -23,3 +23,7 @@ ln -s bash_profile/.bash_profile
 
 There is further installation/setup, instructions can depend on the operating system, so they are given separately:
 * [macOS](setup_macos.md)
+
+# Other Configuration
+
+* setting up the command line environment for [GitHub](setup_github.md)
