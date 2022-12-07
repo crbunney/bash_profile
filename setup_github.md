@@ -11,6 +11,13 @@ Setup username and email address:
  * `git config --global user.name "FIRST_NAME LAST_NAME"`
  * `git config --global user.email "MY_NAME@example.com"`
 
+## Setup Global .gitignore
+
+The global .gitignore will apply to all repositories, but is actually per-user rather than truly global (i.e. all users)
+
+* `git config --global core.excludesFile ~/bash_profile/.global_gitignore`
+
+
 
 ## Setting up HTTPS based accesss
 

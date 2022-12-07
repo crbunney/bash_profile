@@ -1,4 +1,6 @@
-My personal, basic bash profile configuation.
+My personal dev environment setup
+
+This repo started off as just my bash profile configuation (hence the name, but has grown to encompass the setup of all the tools I commonly use).
 
 It's a convenient way of keeping a versioned backup of my preferred setup.
 
