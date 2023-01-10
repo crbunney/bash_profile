@@ -21,6 +21,7 @@ git checkout https://github.com/crbunney/bash_profile.git
 
 ln -s bash_profile/.bashrc
 ln -s bash_profile/.bash_profile
+;n -s bash_profile/.bash_completion
 ```
 
 There is further installation/setup, instructions can depend on the operating system, so they are given separately:
