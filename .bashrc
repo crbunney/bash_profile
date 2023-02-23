@@ -14,6 +14,7 @@ fi
 
 # User specific environment and startup programs
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
+PATH=$PATH:"~/Library/Application Support/JetBrains/Toolbox/scripts" # for Jetbrains command line tools/commands
 export PATH
 
 # Set PATH, MANPATH, etc., for Homebrew.
@@ -37,3 +38,9 @@ PS1='\[\033[33m\][\D{%H:%M:%S}] \[\033[0;36m\]\w\[\033[0;31m\] $(__git_ps1)\[\03
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# for conveniently interacting with localstack resources
+alias awslocal="AWS_ACCESS_KEY_ID=test AWS_SECRET_ACCESS_KEY=test AWS_DEFAULT_REGION=${DEFAULT_REGION:-$AWS_DEFAULT_REGION} aws --endpoint-url=http://${LOCALSTACK_HOST:-localhost}:4566"
+complete -C '/opt/homebrew/bin/aws_completer' aws
+complete -C '/opt/homebrew/bin/aws_completer' awslocal
+
