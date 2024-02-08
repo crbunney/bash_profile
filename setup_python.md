@@ -9,4 +9,6 @@ The versioned packages install an executable with the version in the name, e.g. 
 
 As this could lead to potential confusion between the homebrew and macOS installations of python, I prefer to use `brew install python3`, as that will install a `python3` executable to `$(brew --prefix)/bin/python3`. Since `$(brew --prefix)/bin/` comes before `/usr/bin` on the `$PATH`, it will have precedence over the macOS python installation and avoid confusion.
 
-
+# TODO
+* poetry
+* pyenv

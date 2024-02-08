@@ -20,6 +20,9 @@ export PATH
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# enable pyenv-virtualenv
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 EDITOR=nano
 export EDITOR
 
@@ -44,3 +47,5 @@ alias awslocal="AWS_ACCESS_KEY_ID=test AWS_SECRET_ACCESS_KEY=test AWS_DEFAULT_RE
 complete -C '/opt/homebrew/bin/aws_completer' aws
 complete -C '/opt/homebrew/bin/aws_completer' awslocal
 
+# GCP CLI setup (via brew: brew install --cask google-cloud-sdk)
+[[ -r $(brew --prefix)"/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/share/google-cloud-sdk/path.bash.inc"
