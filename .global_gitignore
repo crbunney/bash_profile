@@ -1,2 +1,5 @@
 # For IntelliJ/PyCharm stuff
 **/.idea/
+
+# pyenv local python config
+.python-version

@@ -17,3 +17,4 @@ fi
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"

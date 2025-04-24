@@ -49,3 +49,6 @@ complete -C '/opt/homebrew/bin/aws_completer' awslocal
 
 # GCP CLI setup (via brew: brew install --cask google-cloud-sdk)
 [[ -r $(brew --prefix)"/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/share/google-cloud-sdk/path.bash.inc"
+
+# Login to GHCR
+cat ~/.github_pat | docker login ghcr.io -u crbunney --password-stdin
